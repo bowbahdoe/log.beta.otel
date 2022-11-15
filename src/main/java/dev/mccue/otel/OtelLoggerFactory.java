@@ -6,6 +6,6 @@ import dev.mccue.log.beta.LoggerFactory;
 public final class OtelLoggerFactory implements LoggerFactory {
     @Override
     public Logger createLogger(String namespace) {
-        return null;
+        return new OtelLogger(namespace);
     }
 }
